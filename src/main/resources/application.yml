@@ -1,0 +1,29 @@
+server:
+    port: 8080
+    servlet:
+        context-path: /santander
+
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        #url: jdbc:postgresql://localhost:5432/postgres
+        #username: postgres
+        #password: c412f5bb
+        url: jdbc:postgres://phloadsupidjir:ee78c51ed01d533ee492b6d30ea232aea64ad9bc78edb6544ff95ee685560c04@ec2-18-214-195-34.compute-1.amazonaws.com:5432/d2i8oiltlvs90h
+        username: phloadsupidjir
+        password: ee78c51ed01d533ee492b6d30ea232aea64ad9bc78edb6544ff95ee685560c04
+    jpa:
+        show-sql: true
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        generate-ddl: false
+        hibernate:
+            ddl-auto: none
+
+application:
+    description: Projeto criado para o Santander DevWeek
+    version: 1.00
+    termsOfService: http://swagger.io/terms/
+    license:
+        name: Apache 2.0
+        url: http://springdoc.org/
+
